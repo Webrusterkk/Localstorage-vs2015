@@ -20,15 +20,14 @@
     <script src="scripts/app.js"></script>
     <script src="scripts/controllers.js"></script>
     <script src="scripts/services.js"></script>
-    <script src="scripts/ng-cordova.js"></script>
-    <!--<script src="scripts/pouchdb.min.js"></script>-->
+    <script src="scripts/pouchdb.min.js"></script>
     <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
 
    
 </head> 
 <body ng-app="starter">
-    <!--<ion-pane ng-controller="OverviewController as vm">
+    <ion-pane ng-controller="OverviewController as vm">
         <ion-header-bar class="bar-stable">
             <h1 class="title">🎂  Birthdays  🎉</h1>
             <div class="buttons">
@@ -40,12 +39,12 @@
                 <ion-item ng-repeat="b in vm.birthdays" ng-click="vm.showEditBirthdayModal(b)">
                     <div style="float: left">{{ b.Name }}</div>
                     <div style="float: right">{{ b.Date | date:"dd MMMM yyyy" }}</div>
-                </ion-item>
+                </ion-item> 
             </ion-list>
         </ion-content>
-    </ion-pane>-->
+    </ion-pane>
 
-    <ion-pane ng-controller="NFController">
+    <!--<ion-pane ng-controller="NFController">
         <ion-header-bar class="bar-stable">
             <h1 class="title">Nextflow One Word</h1>
         </ion-header-bar>
@@ -71,7 +70,7 @@
                 <a class="button" href="mailto:krishna30kishore@gmail.com">Contact</a>
             </div>
         </ion-footer-bar>
-    </ion-pane>
+    </ion-pane>-->
 
     <script id="add-or-edit-birthday.html" type="text/ng-template">
         <ion-modal-view>

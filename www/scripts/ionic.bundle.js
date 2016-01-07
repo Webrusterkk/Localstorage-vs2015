@@ -12,7 +12,7 @@
  * Ionic, v1.0.0-rc.4
  * A powerful HTML5 mobile app framework.
  * http://ionicframework.com/
- *
+ * 
  * By @maxlynch, @benjsperry, @adamdbradley <3
  *
  * Licensed under the MIT license. Please see LICENSE for more information.

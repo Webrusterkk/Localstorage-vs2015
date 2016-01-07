@@ -1,5 +1,5 @@
 ﻿(function () {
-    angular.module('starter').controller('OverviewController', 'NFController', ['$scope', '$ionicModal', '$ionicPlatform', 'BirthdayService', '$cordovaSQLite', OverviewController, NFController]);
+    angular.module('starter').controller('OverviewController', ['$scope', '$ionicModal', '$ionicPlatform', 'BirthdayService',OverviewController]);
 
     function OverviewController($scope, $ionicModal, $ionicPlatform, birthdayService) {
         var vm = this;
@@ -57,40 +57,7 @@
         return vm;
     }
 
-    function NFController($scope, $cordovaSQLite) {
-
-        $scope.save = function(newMessage) {
-
-            // execute INSERT statement with parameter
-            $cordovaSQLite.execute(db, 'INSERT INTO Messages (message) VALUES (?)', [newMessage])
-                .then(function(result) {
-                    $scope.statusMessage = "Message saved successful, cheers!";
-                }, function(error) {
-                    $scope.statusMessage = "Error on saving: " + error.message;
-                })
-
-        }
-
-        $scope.load = function() {
-
-            // Execute SELECT statement to load message from database.
-            $cordovaSQLite.execute(db, 'SELECT * FROM Messages ORDER BY id DESC')
-                .then(
-                    function(res) {
-
-                        if (res.rows.length > 0) {
-
-                            $scope.newMessage = res.rows.item(0).message;
-                            $scope.statusMessage = "Message loaded successful, cheers!";
-                        }
-                    },
-                    function(error) {
-                        $scope.statusMessage = "Error on loading: " + error.message;
-                    }
-                );
-        }
-
-    }
+   
 })();
 
 //angular.module('starter.controllers', [])
