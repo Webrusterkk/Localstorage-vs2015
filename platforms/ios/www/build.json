@@ -1,0 +1,18 @@
+{
+  "android": {
+    "release": {
+      "alias": "",
+      "keystore": "",
+      "keystoreType": "",
+      "password": "",
+      "storePassword": ""
+    }
+  //},
+  //"ios": {
+  //  "release": {
+  //    "codeSignIdentity": "[C:\\Users\\Vijaysekhar\\Desktop\\kishore-apache cordova\\OpenSSL-Win32\\bin\\Privateandpublickeys\\ios_distribution.cer]",
+  //    "provisioningProfile": "[C:\\Users\\Vijaysekhar\\Desktop\\kishore-apache cordova\\OpenSSL-Win32\\bin\\Privateandpublickeys\\Distribution.mobileprovision]"
+  //  }
+  }
+}
+
